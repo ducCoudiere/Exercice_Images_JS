@@ -1,66 +1,22 @@
 <html>
-<head>         
-<script>      
-function affichage(){    
-	alert("Tout es OK !");
-}
-function cacher(){
-	document.getElementById('DuTexte').style.display="None";
-}
-function presenter(){
-	document.getElementById('DuTexte').style.display="Block";
-}      
-    
+<head>
+<script>
 function controler(){
 	if(document.getElementById('Control').checked){
-			alert("Bouton option coché");
+			document.getElementById('image1').style.display="Block";
+
 		}
-	else{alert("Bouton option NON coché");}		
+	else{document.getElementById('image1').style.display="None";}		
 }
 
 </script>
 </head>
 <body>
-
-<h1>Image(s) a afficher?</h1>
-
-<hr/>
-<p><input type="checkbox" id="Control">Image1</p>
-<p><input type="checkbox" id="Control">Image2</p>
-<p><input type="checkbox" id="Control">Image3</p>
- 
-<p><button onclick="affichage()">Afficher</button></p>
-	
-<p><img src="https://github.com/ducCoudiere/Exercice_Images_JS/blob/main/Image1.jpg"></p>
-
-
-<script type="text/javascript">
-function ChangeStatut(formulaire) {
-if(formulaire.truc.checked == true) {document.getElementById("Titre1").style.visibility =
-
-"visible";}
-if(formulaire.truc.checked == false) {document.getElementById("Titre1").style.visibility =
-
-"hidden";}
-}
-
-</script>
-
-
-
-
-	
-<hr/>
-<h2>Boite de dialogue</h2>
-<button onclick="affichage()">Afficher</button>
-<hr/>
-<p id="DuTexte">Ma phrase de texte</p>
-<button onclick="presenter()">Presenter</button>
-<button onclick="cacher()">Cacher</button>
+<h1>Image</h1>
 <hr/>
 <p>Option<input type="checkbox" id="Control"></p>
-<button onclick="controler()">Check</button>
-
+<button onclick="controler()">Check</button><br/>
+<img id="image1" src="Image1.jpg" style="display:None">
 
 </body>
 </html>
