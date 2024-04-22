@@ -9,7 +9,7 @@ function afficher(){
 	var resultat = "";	
 		
 	for (j=0; j<saisie ; j++){
-        for (i=0; i<(j+1) ; i++){
+        for (i=0; i<(saisie-j) ; i++){
                 resultat += "*"; 
         }
                 resultat += "</br>";
@@ -21,6 +21,9 @@ function afficher(){
 
 	
 </script>
+
+
+
 
 </head>
 <body>
