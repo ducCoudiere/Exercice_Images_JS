@@ -1,0 +1,21 @@
+<form>
+  <fieldset>
+  <legend>Quelles langues parlez-vous ?</legend>
+  <div>
+    <input type="checkbox" id="french" name="language" value="french" checked>
+    <label for="french">Français</label>
+  </div>
+  <div>
+    <input type="checkbox" id="english" name="language" value="english">
+    <label for="english">Anglais</label>
+  </div>
+    <div>
+    <input type="checkbox" id="chinese" name="language" value="chinese">
+    <label for="chinese">Chinois</label>
+  </div>
+<div>
+    <button type="submit">Envoyer</button>
+  </div>
+</fieldset>
+</form>
+
