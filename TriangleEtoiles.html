@@ -9,7 +9,7 @@ function afficher(){
 	var resultat = "";	
 		
 	for (j=0; j<saisie ; j++){
-        for (i=0; i<saisie ; i++){
+        for (i=0; i<(j+1) ; i++){
                 resultat += "*"; 
         }
                 resultat += "</br>";
@@ -19,11 +19,12 @@ function afficher(){
 
 }
 
+	
 </script>
 
 </head>
 <body>
-<h1>Les étoiles</h1>
+<h1>Les etoiles</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
 <button onclick="afficher()">Afficher</button>
 <div id="result"></div>
