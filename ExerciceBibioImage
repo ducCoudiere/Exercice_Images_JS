@@ -21,7 +21,17 @@ function controler(){
 </script>
 </head>
 <body>
+
 <h1>Image(s) à afficher?</h1>
+
+<hr/>
+<p><input type="checkbox" id="Control">Image1</p>
+<button onclick="controler()">Check</button>
+<p><input type="checkbox" id="Control">Image2</p>
+<button onclick="controler()">Check</button>
+<p><input type="checkbox" id="Control">Image3</p>
+<button onclick="controler()">Check</button>
+
 <hr/>
 <h2>Boite de dialogue</h2>
 <button onclick="affichage()">Afficher</button>
