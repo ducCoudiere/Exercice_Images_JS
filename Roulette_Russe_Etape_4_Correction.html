@@ -4,7 +4,15 @@
 function lancer(){
 	alert("Lancer le barillet");
            var Val = Math.floor((Math.random() * 6)+1);
-	function trou1(){
+	
+		   if(document.getElementById("Br"+Val).style.fill=="red"){alert("Perdu");}
+		   else{alert("Gagne");}
+		   
+		   document.getElementById("Br"+Val).style.fill="blue";
+
+
+}
+function trou1(){
           if(document.getElementById("Br1").style.fill=="red"){
 			 document.getElementById("Br1").style.fill="gray";	
 		  }
@@ -45,14 +53,6 @@ function trou6(){
 		  }
 		  else{alert("Vous avez perdu");document.getElementById("Br6").style.fill="red";}
 }
-		   if(document.getElementById("Br"+Val).style.fill=="red"){alert("Perdu");}
-		   else{alert("Gagne");}
-		   
-		   document.getElementById("Br"+Val).style.fill="blue";
-
-
-}
-
 
 
 </script>
