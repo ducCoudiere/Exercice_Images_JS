@@ -1,26 +1,145 @@
 <html>
   <head>
     <title>Roulette Russe</title>
+        <script>
+      function lancer(){
+        var Val = Math.floor((Math.random() * 20)+1);
+        alert(Val);
+        switch(Val){
+        case 1 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    break;
+
+        case 2 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    break;
+
+        case 3 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    break;
+        case 4 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+        case 5 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    break;
+        case 6 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    break; 
+        case 7 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+
+        case 8 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    break;
+
+        case 9 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+        case 10 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+        case 11 :
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    break;
+        case 12 :
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    break; 
+        case 13 :
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+
+        case 14 :
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    break;
+
+        case 15 :
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+        case 16 :
+                    document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+        case 17 :
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    break;
+        case 18 :
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break; 
+        case 19 :
+                    document.getElementById('C3').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;
+
+        case 20 :
+                    document.getElementById('C4').style.display = 'block';
+                    document.getElementById('C5').style.display = 'block';
+                    document.getElementById('C6').style.display = 'block';
+                    break;           
+        }
+        
+      }
+    </script>  
+
   </head>
   <body>
                            
     <svg width="300px" height="300px" style="background-color:beige">
     <circle cx="150" cy="150" r="140" stroke="black" stroke-width="3" fill="beige" />
       
-    <circle cx="150" cy="55" r="35" stroke="black" stroke-width="3" fill="gray" />
-    <circle cx="150" cy="245" r="35" stroke="black" stroke-width="3" fill="gray" />
-    <circle cx="75" cy="100" r="35" stroke="black" stroke-width="3" fill="gray" />
-    <circle cx="75" cy="200" r="35" stroke="black" stroke-width="3" fill="gray" />
-    <circle cx="225" cy="100" r="35" stroke="black" stroke-width="3" fill="gray" />
-    <circle cx="225" cy="200" r="35" stroke="black" stroke-width="3" fill="gray" />
+    <circle id="C1"  cx="150" cy="55" r="35" stroke="black" stroke-width="3" fill="gray" />
+    <circle id="C6"  cx="150" cy="245" r="35" stroke="black" stroke-width="3" fill="gray" />
+    <circle id="C2"  cx="75" cy="100" r="35" stroke="black" stroke-width="3" fill="gray" />
+    <circle id="C4"  cx="75" cy="200" r="35" stroke="black" stroke-width="3" fill="gray" />
+    <circle id="C3"  cx="225" cy="100" r="35" stroke="black" stroke-width="3" fill="gray" />
+    <circle id="C5"  cx="225" cy="200" r="35" stroke="black" stroke-width="3" fill="gray" />
 
     <circle cx="150" cy="150" r="10" stroke="black" stroke-width="3" fill="black"/>
 
-    <circle cx="75" cy="100" r="35" stroke="black" stroke-width="3" fill="red" />
+      
+    < !-- <circle cx="75" cy="100" r="35" stroke="black" stroke-width="3" fill="red" />
     <circle cx="225" cy="100" r="35" stroke="black" stroke-width="3" fill="red" />
-    <circle cx="225" cy="200" r="35" stroke="black" stroke-width="3" fill="red" />
+    <circle cx="225" cy="200" r="35" stroke="black" stroke-width="3" fill="red" /> -- >
       
     </svg> 
+    <button onclick="lancer()">Jouer</button>
 
   
 </body>
