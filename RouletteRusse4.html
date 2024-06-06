@@ -1,0 +1,99 @@
+<html>
+
+    <meta charset="UTF-8" />
+
+<head>
+
+    <style>
+        .selected {
+            fill: red;
+        }
+    </style>
+
+
+    <script>
+        function changercouleur(index) {
+            // Récupérer l'élément cercle correspondant à l'indice
+            var circle = document.getElementById("C" + index);
+            // Vérifier si le cercle est deja sélectionné
+            if (circle.getAttribute("fill") === "red") {
+                // Si oui, le désélectionner en changeant la couleur de remplissage
+                circle.setAttribute("fill", "gray");
+            }
+            else {
+                var selectedCircles = document.querySelectorAll("circle[fill='red']");
+                if (selectedCircles.length < 3) {
+                    // Sinon changer la couleur de remplissage
+                    circle.setAttribute("fill", "red");
+                } else {
+                    alert("pas plus de 3 cercles");
+                }
+            }
+        }
+
+
+        function roulette() {
+            // Générer un nombre aléatoire entre 1 et 6
+            var randomIndex = Math.floor(Math.random() * 6) + 1;
+            var selectedCircleId = "C" + randomIndex;
+            var selectedCircle = document.getElementById(selectedCircleId);
+
+            // Vérifier si le cercle aléatoire est rouge
+            if (selectedCircle.getAttribute("fill") === "red") {
+                selectedCircle.setAttribute("fill", "blue");
+                alert("Perdu");
+            } else {
+                selectedCircle.setAttribute("fill", "blue");
+                alert("gagné");
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <button onclick="roulette()">Jouer</button>
+    <svg width="300px" height="300px" style="background-color:rgb(233, 195, 159)">
+
+        <circle id="C1" cx="150" cy="55" r="37" stroke="black" stroke-width="3" fill=gray style="display:block"
+            onclick="changercouleur('1')" />
+        <circle id="C2" cx="230" cy="105" r="37" stroke="black" stroke-width="3" fill=gray style="display:block"
+            onclick="changercouleur('2')" />
+        <circle id="C3" cx="70" cy="105" r="37" stroke="black" stroke-width="3" fill=gray style="display:block"
+            onclick="changercouleur('3')" />
+
+        <circle id="C4" cx="150" cy="245" r="37" stroke="black" stroke-width="3" fill=gray style="display:block"
+            onclick="changercouleur('4')" />
+        <circle id="C5" cx="230" cy="195" r="37" stroke="black" stroke-width="3" fill=gray style="display:block"
+            onclick="changercouleur('5')" />
+        <circle id="C6" cx="70" cy="195" r="37" stroke="black" stroke-width="3" fill=gray style="display:block"
+            onclick="changercouleur('6')" />
+
+        <circle cx="150" cy="150" r="145" stroke="black" stroke-width="3" fill=none style="display:block" />
+        <circle cx="150" cy="150" r="15" stroke="black" stroke-width="3" fill=black style="display:block" />
+
+
+    </svg>
+
+
+</body>
+
+</html>
+        <circle cx="150" cy="150" r="145" stroke="black" stroke-width="3" fill=none style="display:block" />
+        <circle cx="150" cy="150" r="15" stroke="black" stroke-width="3" fill=black style="display:block" />
+
+        <circle id="C1" cx="150" cy="55" r="37" stroke="black" stroke-width="3" fill=gray style="display:block" />
+        <circle id="C2" cx="230" cy="105" r="37" stroke="black" stroke-width="3" fill=gray style="display:block" />
+        <circle id="C3" cx="70" cy="105" r="37" stroke="black" stroke-width="3" fill=gray style="display:block" />
+
+        <circle id="C4" cx="150" cy="245" r="37" stroke="black" stroke-width="3" fill=gray style="display:block" />
+        <circle id="C5" cx="230" cy="195" r="37" stroke="black" stroke-width="3" fill=gray style="display:block" />
+        <circle id="C6" cx="70" cy="195" r="37" stroke="black" stroke-width="3" fill=gray style="display:block" />
+
+
+
+    </svg>
+</body>
+
+</html>
